@@ -1,11 +1,5 @@
 <?PHP
 include('header.php')
 ?>
-    <ul>
-        <li>Play</li>
-        <li>Xbox</li>
-        <li>Nintendo</li>
-        <li>Nosotros</li>
-    </ul>
 </body>
 </html>
