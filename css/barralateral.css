@@ -70,10 +70,12 @@ body{
     color: var(--color-boton-texto);
     right: 15px;
     top: 15px;
+    z-index: 100;
 }
 
 /*------barra lateral*/
 .barra-lateral{
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -83,6 +85,7 @@ body{
     padding: 20px 15px;
     background-color: var(--color-barra-lateral);
     transition: width 0.5s ease,background-color 0.3s ease, left 0.5s ease;
+    z-index: 50;
 }
 .mini-barra-lateral{
     width: 80px;
@@ -236,6 +239,16 @@ body{
 }
 
 
+/*-------main*/
+main{
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.5s ease;
+}
+main.min-main{
+    margin-left: 80px;
+}
+
 
 /*------>Responsive*/
 @media (max-height: 660px){
@@ -248,7 +261,7 @@ body{
 }
 @media (max-width: 600px){
     .barra-lateral{
-        position: absolute;
+        position: fixed;
         left: -250px;
     }
     .max-barra-lateral{
@@ -259,5 +272,11 @@ body{
     }
     .menu ion-icon:nth-child(2){
         display: none;
+    }
+    main{
+        margin-left: 0;
+    }
+    main.min-main{
+        margin-left: 0;
     }
 }
