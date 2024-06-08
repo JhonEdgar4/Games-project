@@ -34,8 +34,8 @@ palanca.addEventListener("click",()=>{
 
 cloud.addEventListener("click",()=>{
     barralateral.classList.toggle("mini-barra-lateral");
-    main.classList.toggle("min-main");
     spans.forEach((span)=>{
         span.classList.toggle("oculto");
     });
+    main.classList.toggle("min-main");
 });
