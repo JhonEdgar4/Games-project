@@ -6,19 +6,37 @@
     <title>Play</title>
     <link rel="icon" type="text/css" href="media/img/logo.jpeg">
     <link rel="stylesheet" type="text/css" href="css/playestilo.css">
+    <style>
+        /* Estilos adicionales para el carrito de compras */
+        .container-icon { position: relative; cursor: pointer; }
+        .icon-cart { width: 25px; height: 25px; color: #fff; }
+        .count-products { position: absolute; top: -10px; right: -10px; background-color: #ff5a2c; color: #fff; padding: 5px 10px; border-radius: 50%; font-size: 14px; }
+        .hidden { display: none; }
+        .container-cart-products { position: fixed; top: 60px; right: 20px; width: 300px; background-color: #2a223a; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); padding: 20px; z-index: 1000; }
+        .hidden-cart { display: none; }
+        .cart-empty { text-align: center; color: #fff; }
+        .cart-product { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .info-cart-product { display: flex; flex-direction: column; color: #fff; }
+        .icon-close { width: 20px; height: 20px; cursor: pointer; color: #ff5a2c; }
+        .cart-total { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; color: #fff; }
+    </style>
 </head>
 <body>
     <header class="header">
         <div class="menu container">
             <a href="#" class="logo">Play</a>
-            <input type="checkbox"  id="menu" />
+            <input type="checkbox" id="menu" />
+            <div class="container-icon">
+                <svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l1.24-4.99L18 4H6.4M7 13L5.6 8.4M7 13h1.34m-1.34 0h-.22l-.24-1M10 21a1 1 0 100-2 1 1 0 000 2zm7 0a1 1 0 100-2 1 1 0 000 2z" />
+                </svg>
+                <div class="count-products hidden" id="contador-productos">0</div>
+            </div>
         </div>
         <div class="header-content container">
             <div class="header-txt">
                 <h1>Compra todo los <span>juegos</span> <br> que quieras </h1>
-                <p>
-                    En esta pagina web encontraras todos los juegos de play stations
-                </p>
+                <p>En esta pagina web encontraras todos los juegos de play stations</p>
                 <div class="butons">
                     <a href="#contact-section" class="btn-1">Informacion</a>
                     <a href="#product-content" class="btn-1">Compras</a>
@@ -29,7 +47,6 @@
 
     <section class="popular container">
         <h2>juegos populare</h2>
-
         <div class="popular-content">
             <img src="media/img/god.png" alt="">
             <img src="media/img/ratchet-clank-una-dimension-aparte.jpg" alt="">
@@ -40,6 +57,7 @@
             <img src="media/img/Horizon.jpg" alt="">
         </div>
     </section>
+
     <main id="product-content" class="product container">
         <h2>Todos los juegos que puedes comprar</h2>
         <div class="product-content">
@@ -144,7 +162,6 @@
         </div>
     </main>
 
-
     <section id="contact-section" class="contact container">
         <div class="contact-content">
             <h3>Completa tus datos personales</h3>
@@ -163,7 +180,7 @@
             </form>
         </div>
     </section>
-    
+
     <footer class="footer container">
         <div class="link">
             <a href="#" class="logo">Logo</a>
@@ -177,19 +194,90 @@
         </div>
     </footer>
 
+    <!-- Contenedor del carrito de compras -->
+    <div class="container-cart-products hidden-cart" id="carrito">
+        <div class="cart-empty" id="cart-empty">
+            <p>El carrito está vacío</p>
+        </div>
+        <div class="cart-products" id="lista-carrito"></div>
+        <div class="cart-total" id="total-pagar">
+            <p>Total:</p>
+            <p>$0.00</p>
+        </div>
+    </div>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const juegoButtons = document.querySelectorAll('.btn-2');
+            const iconCart = document.querySelector('.icon-cart');
+            const carrito = document.getElementById('carrito');
+            const contadorProductos = document.getElementById('contador-productos');
+            const listaCarrito = document.getElementById('lista-carrito');
+            const totalPagar = document.getElementById('total-pagar').lastElementChild;
+
+            let carritoProductos = [];
+
+            iconCart.addEventListener('click', () => {
+                carrito.classList.toggle('hidden-cart');
+            });
+
+            const agregarAlCarrito = (titulo, precio) => {
+                const productoExistente = carritoProductos.find(producto => producto.titulo === titulo);
+                if (productoExistente) {
+                    productoExistente.cantidad++;
+                } else {
+                    carritoProductos.push({ titulo, precio, cantidad: 1 });
+                }
+                actualizarCarrito();
+            };
+
+            const actualizarCarrito = () => {
+                listaCarrito.innerHTML = '';
+                carritoProductos.forEach(producto => {
+                    const productoHTML = `
+                        <div class="cart-product">
+                            <div class="info-cart-product">
+                                <span class="titulo-producto-carrito">${producto.titulo}</span>
+                                <span class="cantidad-producto-carrito">${producto.cantidad}</span>
+                                <span class="precio-producto-carrito">$${producto.precio}</span>
+                            </div>
+                            <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </div>
+                    `;
+                    listaCarrito.insertAdjacentHTML('beforeend', productoHTML);
+                });
+                actualizarTotal();
+                actualizarContador();
+            };
+
+            const actualizarTotal = () => {
+                const total = carritoProductos.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
+                totalPagar.textContent = `$${total.toFixed(2)}`;
+            };
+
+            const actualizarContador = () => {
+                const totalProductos = carritoProductos.reduce((acc, producto) => acc + producto.cantidad, 0);
+                contadorProductos.textContent = totalProductos;
+                contadorProductos.classList.toggle('hidden', totalProductos === 0);
+            };
+
+            listaCarrito.addEventListener('click', (e) => {
+                if (e.target.classList.contains('icon-close')) {
+                    const tituloProducto = e.target.closest('.cart-product').querySelector('.titulo-producto-carrito').textContent;
+                    carritoProductos = carritoProductos.filter(producto => producto.titulo !== tituloProducto);
+                    actualizarCarrito();
+                }
+            });
 
             juegoButtons.forEach(button => {
-                button.addEventListener('click', function(event) {
-                    event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
-                    const destinoInput = document.getElementById('juego');
-                    const product = this.closest('.product-1');
-                    const titulo = product.querySelector('h3');
-                    if (titulo) {
-                        destinoInput.value = titulo.textContent;
-                    }
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const producto = button.closest('.product-1');
+                    const titulo = producto.querySelector('h3').textContent;
+                    const precio = parseFloat(producto.querySelector('.price p').textContent.replace('$', '').replace('.', ''));
+                    agregarAlCarrito(titulo, precio);
                 });
             });
         });
