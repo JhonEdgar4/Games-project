@@ -4,8 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Propósito - PIXELEMPORIO</title>
+    <link rel="stylesheet" type="text/css" href="css/barralateral.css">
+
 </head>
 <body>
+
+    <div class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon id="cloud" name="cloud-outline"></ion-icon>
+                <span>PIXELEMPOIRO</span>
+                </div>
+                <button class="boton">
+                    <ion-icon name="add-outline"></ion-icon>
+                    <span>Create new</span>  
+                </button>
+        </div>
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a href="index.php">
+                        <ion-icon name="home-outline"></ion-icon>
+                    <span>Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="play.php">
+                        <ion-icon name="logo-playstation"></ion-icon>
+                    <span>Play</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="xbox.php">
+                        <ion-icon name="logo-xbox"></ion-icon>
+                    <Span>Xbox</Span>
+                    </a>
+                </li>
+                <li>
+                    <a href="nintendo.php">
+                        <ion-icon name="game-controller-outline"></ion-icon>
+                    <span>Nintendo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="nosotros.php">
+                        <ion-icon name="person-outline"></ion-icon>
+                    <span>Nosotros</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+            <div class="modo-oscuro">
+                <div class="info">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <span>Dark Mode</span>   
+                </div>
+                <div class="switch">
+                    <div class="base">
+                        <dev class="circulo">
+                        </dev>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+<main>
     <div class="container">
         <h1>Propósito</h1>
         <p>En <strong>PIXELEMPORIO</strong>, nuestro propósito es ser el puente entre los gamers y sus mundos virtuales favoritos. Nos apasiona ofrecer una plataforma donde los jugadores puedan descubrir, adquirir y disfrutar de los mejores videojuegos del mercado para Xbox, PlayStation y Nintendo.</p>
@@ -27,6 +101,11 @@
         <h2>Nuestra Visión</h2>
         <p>A largo plazo, en PIXELEMPORIO aspiramos a convertirnos en la tienda de videojuegos más confiable y reconocida del mercado, siendo sinónimo de calidad, innovación y servicio al cliente. Queremos ser la primera opción para todos los gamers, desde los más casuales hasta los más apasionados, y contribuir al crecimiento y desarrollo de la cultura gamer en todo el mundo.</p>
     </div>
+</main>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
 

@@ -6,8 +6,80 @@
     <title>Xbox</title>
     <link rel="icon" type="text/css" href="media/img/logo.jpeg">
     <link rel="stylesheet" type="text/css" href="css/xboxestilo.css">
+    <link rel="stylesheet" type="text/css" href="css/barralateral.css">
 </head>
 <body>
+
+<div class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon id="cloud" name="cloud-outline"></ion-icon>
+                <span>PIXELEMPOIRO</span>
+                </div>
+                <button class="boton">
+                    <ion-icon name="add-outline"></ion-icon>
+                    <span>Create new</span>  
+                </button>
+        </div>
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a href="index.php">
+                        <ion-icon name="home-outline"></ion-icon>
+                    <span>Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="play.php">
+                        <ion-icon name="logo-playstation"></ion-icon>
+                    <span>Play</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="xbox.php">
+                        <ion-icon name="logo-xbox"></ion-icon>
+                    <Span>Xbox</Span>
+                    </a>
+                </li>
+                <li>
+                    <a href="nintendo.php">
+                        <ion-icon name="game-controller-outline"></ion-icon>
+                    <span>Nintendo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="nosotros.php">
+                        <ion-icon name="person-outline"></ion-icon>
+                    <span>Nosotros</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+            <div class="modo-oscuro">
+                <div class="info">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <span>Dark Mode</span>   
+                </div>
+                <div class="switch">
+                    <div class="base">
+                        <dev class="circulo">
+                        </dev>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+<main>
     <header class="header">
         <div class="menu container">
             <a href="#" class="logo">Xbox</a>
@@ -177,7 +249,7 @@
             </ul>
         </div>
     </footer>
-
+</main>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const juegoButtons = document.querySelectorAll('.btn-2');
@@ -195,5 +267,8 @@
             });
         });
     </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
