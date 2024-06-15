@@ -220,7 +220,7 @@
         </div>
     </section>
     <main id="product-content" class="product container">
-        <h2>Todos los juegos que puedes comprar</h2>
+        <h2>Todos los juegos de Terror</h2>
         <div class="product-content">
             
             <div class="product-1">
