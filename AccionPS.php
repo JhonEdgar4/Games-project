@@ -120,31 +120,31 @@
             <nav class="navegacion">
                 <ul>
                     <li>
-                        <a href="index.php">
+                        <a href="../index.php">
                             <ion-icon name="home-outline"></ion-icon>
                         <span>Inicio</span>
                         </a>
                     </li>
                     <li>
-                        <a href="play.php">
+                        <a href="../play.php">
                             <ion-icon name="logo-playstation"></ion-icon>
                         <span>Play</span>
                         </a>
                     </li>
                     <li>
-                        <a href="xbox.php">
+                        <a href="../xbox.php">
                             <ion-icon name="logo-xbox"></ion-icon>
                         <Span>Xbox</Span>
                         </a>
                     </li>
                     <li>
-                        <a href="nintendo.php">
+                        <a href="../nintendo.php">
                             <ion-icon name="game-controller-outline"></ion-icon>
                         <span>Nintendo</span>
                         </a>
                     </li>
                     <li>
-                        <a href="nosotros.php">
+                        <a href="../nosotros.php">
                             <ion-icon name="person-outline"></ion-icon>
                         <span>Nosotros</span>
                         </a>
@@ -198,9 +198,9 @@
             <div class="header-content container">
                 <div class="header-txt">
                     <h1>Compra todo los <span>juegos</span> <br> que quieras </h1>
-                    <p>En esta pagina web encontraras todos los juegos de play stations</p>
+                    <p>En esta pagina encontraras juegos de accion Play4 y Play5</p>
                     <div class="butons">
-                        <a href="#contact-section" class="btn-1">Informacion</a>
+                        <a href="#contact-section" class="btn-1">Categorias</a>
                         <a href="#product-content" class="btn-1">Compras</a>
                     </div>
                 </div>
@@ -221,102 +221,102 @@
         </section>
 
         <main id="product-content" class="product container">
-            <h2>Todos los juegos que puedes comprar</h2>
+            <h2>Juegos de acción</h2>
             <div class="product-content">
                 <div class="product-1">
-                    <img src="media/img/war.jpg.jpeg" alt="">
+                    <img src="" alt="">
                     <div class="product-txt">
-                        <h3>god of war</h3>
+                        <h3></h3>
                         <div class="price">
-                            <p>$79.900</p>
+                            <p></p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="product-1">
-                    <img src="media/img/ratchet-and-clank.jpg" alt="">
+                    <img src="" alt="">
                     <div class="product-txt">
-                        <h3>ratchet and clank</h3>
+                        <h3></h3>
                         <div class="price">
-                            <p>$74.900</p>
+                            <p></p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="product-1">
-                    <img src="media/img/maxresdefault.jpg" alt="">
+                    <img src="" alt="">
                     <div class="product-txt">
-                        <h3>residen evil 4</h3>
+                        <h3></h3>
                         <div class="price">
-                            <p>$64.900</p>
+                            <p></p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="product-1">
-                    <img src="media/img/MK1-Announce.webp" alt="">
+                    <img src="" alt="">
                     <div class="product-txt">
-                        <h3>Mortal kombat 1</h3>
+                        <h3></h3>
                         <div class="price">
-                            <p>$65.000</p>
+                            <p></p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="product-1">
-                    <img src="media/img/streetfigter.jpg" alt="">
+                    <img src="" alt="">
                     <div class="product-txt">
-                        <h3>street fighter 6</h3>
+                        <h3></h3>
                         <div class="price">
-                            <p>$180.284</p>
+                            <p></p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="product-1">
-                    <img src="media/img/marvels-spiderman-2.jpg" alt="">
+                    <img src="" alt="">
                     <div class="product-txt">
-                        <h3>spiderman 2</h3>
+                        <h3></h3>
                         <div class="price">
-                            <p>$94.900</p>
+                            <p></p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="product-1">
-                    <img src="media/img/hzd.jpg" alt="">
+                    <img src="" alt="">
                     <div class="product-txt">
-                        <h3>Horizon</h3>
+                        <h3></h3>
                         <div class="price">
-                            <p>$49.900</p>
+                            <p></p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="product-1">
-                    <img src="media/img/uncharted.webp" alt="">
+                    <img src="" alt="">
                     <div class="product-txt">
-                        <h3>uncharted</h3>
+                        <h3></h3>
                         <div class="price">
-                            <p>$80.000</p>
+                            <p></p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="product-1">
-                    <img src="media/img/tlou.jpg" alt="">
+                    <img src="" alt="">
                     <div class="product-txt">
-                        <h3>THE LAST OF US REMASTERED</h3>
+                        <h3></h3>
                         <div class="price">
-                            <p>$39.900</p>
+                            <p></p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
@@ -328,17 +328,18 @@
             <div class="contact-content">
                 <h3>Completa tus datos personales</h3>
                 <form>
-                    <input type="text" id="juego" name="juego" placeholder="Juego">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Número de identificación">
-                    <input type="email" placeholder="Correo electrónico">
-                    <select>
-                        <option value="" disabled selected>Selecciona tu método de pago</option>
-                        <option value="tarjeta">Tarjeta de crédito/débito</option>
-                        <option value="paypal">PayPal</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                    </select>
-                    <input type="submit" class="btn-3" value="Enviar">
+                <a href="play.php">
+                        <span>Poúlares</span>
+                    </a>
+                    <a href="AccionPS.php">
+                        <span>Accion</span>
+                    </a>
+                    <a href="TerrorPS.php">
+                        <span>Terror</span>
+                    </a>
+                    <a href="AventuraPS.php">
+                        <span>Aventura</span>
+                    </a>
                 </form>
             </div>
         </section>

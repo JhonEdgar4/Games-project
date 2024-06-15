@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play</title>
     <link rel="icon" type="text/css" href="media/img/logo.jpeg">
-    <link rel="stylesheet" type="text/css" href="../css/playestilo.css">
-    <link rel="stylesheet" type="text/css" href="../css/barralateral.css">
+    <link rel="stylesheet" type="text/css" href="css/playestilo.css">
+    <link rel="stylesheet" type="text/css" href="css/barralateral.css">
     <style>
         /* Estilo para el icono del carrito */
         .carrito-icon {
@@ -120,31 +120,31 @@
             <nav class="navegacion">
                 <ul>
                     <li>
-                        <a href="../index.php">
+                        <a href="index.php">
                             <ion-icon name="home-outline"></ion-icon>
                         <span>Inicio</span>
                         </a>
                     </li>
                     <li>
-                        <a href="../play.php">
+                        <a href="play.php">
                             <ion-icon name="logo-playstation"></ion-icon>
                         <span>Play</span>
                         </a>
                     </li>
                     <li>
-                        <a href="../xbox.php">
+                        <a href="xbox.php">
                             <ion-icon name="logo-xbox"></ion-icon>
                         <Span>Xbox</Span>
                         </a>
                     </li>
                     <li>
-                        <a href="../nintendo.php">
+                        <a href="nintendo.php">
                             <ion-icon name="game-controller-outline"></ion-icon>
                         <span>Nintendo</span>
                         </a>
                     </li>
                     <li>
-                        <a href="../nosotros.php">
+                        <a href="nosotros.php">
                             <ion-icon name="person-outline"></ion-icon>
                         <span>Nosotros</span>
                         </a>
@@ -328,17 +328,18 @@
             <div class="contact-content">
                 <h3>Completa tus datos personales</h3>
                 <form>
-                    <input type="text" id="juego" name="juego" placeholder="Juego">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Número de identificación">
-                    <input type="email" placeholder="Correo electrónico">
-                    <select>
-                        <option value="" disabled selected>Selecciona tu método de pago</option>
-                        <option value="tarjeta">Tarjeta de crédito/débito</option>
-                        <option value="paypal">PayPal</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                    </select>
-                    <input type="submit" class="btn-3" value="Enviar">
+                <a href="play.php">
+                        <span>Poúlares</span>
+                    </a>
+                    <a href="AccionPS.php">
+                        <span>Accion</span>
+                    </a>
+                    <a href="TerrorPS.php">
+                        <span>Terror</span>
+                    </a>
+                    <a href="AventuraPS.php">
+                        <span>Aventura</span>
+                    </a>
                 </form>
             </div>
         </section>
