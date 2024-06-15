@@ -128,19 +128,19 @@
                     <li>
                         <a href="play.php">
                             <ion-icon name="logo-playstation"></ion-icon>
-                        <span>Play</span>
+                            <span>Play</span>
                         </a>
                     </li>
                     <li>
                         <a href="xbox.php">
                             <ion-icon name="logo-xbox"></ion-icon>
-                        <Span>Xbox</Span>
+                            <Span>Xbox</Span>
                         </a>
                     </li>
                     <li>
                         <a href="nintendo.php">
                             <ion-icon name="game-controller-outline"></ion-icon>
-                        <span>Nintendo</span>
+                            <span>Nintendo</span>
                         </a>
                     </li>
                     <li>
@@ -328,16 +328,18 @@
             <div class="contact-content">
                 <h3>Completa tus datos personales</h3>
                 <form>
-                    <input type="text" id="juego" name="juego" placeholder="Juego">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Número de identificación">
-                    <input type="email" placeholder="Correo electrónico">
-                    <select>
-                        <option value="" disabled selected>Selecciona tu método de pago</option>
-                        <option value="tarjeta">Tarjeta de crédito/débito</option>
-                        <option value="paypal">PayPal</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                    </select>
+                    <a href="../Games-project//play.php" class="btn-3">
+                        <span>Más populares</span>
+                    </a>
+                    <a href="../Games-project/Play/AccionPS.php" class="btn-3">
+                        <span class="btn-3">Acción</span>
+                    </a>
+                    <a href="../Games-project/Play/TerrorPS.php">
+                        <span>Terror</span>
+                    </a>
+                    <a href="">
+                        <span>Aventura</span>
+                    </a>
                     <input type="submit" class="btn-3" value="Enviar">
                 </form>
             </div>
