@@ -7,6 +7,101 @@
     <link rel="icon" type="text/css" href="media/img/logo.jpeg">
     <link rel="stylesheet" type="text/css" href="css/xboxestilo.css">
     <link rel="stylesheet" type="text/css" href="css/barralateral.css">
+    <!-- Referencia a Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        /* Estilo para el icono del carrito */
+        .carrito-icon {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #0ef;
+            padding: 10px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        .carrito-icon ion-icon {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .cart-count {
+            background: #ff5a2c;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 14px;
+            color: #fff;
+            margin-left: 10px;
+        }
+
+        /* Estilo para el contenedor del carrito */
+        .carrito {
+            position: fixed;
+            top: 70px;
+            right: 20px;
+            width: 300px;
+            max-height: 400px;
+            overflow-y: auto;
+            background: #2a223a;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            display: none; /* Oculto por defecto */
+            z-index: 1000;
+        }
+
+        .carrito h2 {
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .carrito-items {
+            margin-bottom: 20px;
+        }
+
+        .carrito-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #3f3456;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        .carrito-item p {
+            margin: 0;
+        }
+
+        .btn-vaciar {
+            background: #ff5a2c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .btn-vaciar:hover {
+            background: #e14a22;
+        }
+
+        .carrito-total {
+            color: #fff;
+            font-size: 18px;
+            text-align: right;
+        }
+    </style>    
 </head>
 <body>
 
@@ -79,6 +174,18 @@
         </div>
         
     </div>
+
+    <div class="carrito-icon" onclick="toggleCarrito()">
+        <ion-icon name="cart-outline"></ion-icon>
+        <span class="cart-count">0</span>
+    </div>
+
+    <div class="carrito">
+        <h2>Tu Carrito</h2>
+        <div class="carrito-items"></div>
+        <button class="btn-vaciar">Vaciar Carrito</button>
+        <p class="carrito-total">Total: $0</p>
+    </div>    
 <main>
     <header class="header">
         <div class="menu container">
@@ -250,23 +357,68 @@
         </div>
     </footer>
 </main>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const juegoButtons = document.querySelectorAll('.btn-2');
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const juegoButtons = document.querySelectorAll('.btn-2');
+        const carritoIcon = document.querySelector('.carrito-icon');
+        const carrito = document.querySelector('.carrito');
+        const carritoItems = document.querySelector('.carrito-items');
+        const cartCount = document.querySelector('.cart-count');
+        const carritoTotal = document.querySelector('.carrito-total');
+        const btnVaciar = document.querySelector('.btn-vaciar');
 
-            juegoButtons.forEach(button => {
-                button.addEventListener('click', function(event) {
-                    event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
-                    const JuegoInput = document.getElementById('Juego');
-                    const product = this.closest('.product-1');
-                    const titulo = product.querySelector('h3');
-                    if (titulo) {
-                        JuegoInput.value = titulo.textContent;
-                    }
-                });
+        const carritoData = [];
+
+        function updateCart() {
+            carritoItems.innerHTML = '';
+            let total = 0;
+            carritoData.forEach(item => {
+                const carritoItem = document.createElement('div');
+                carritoItem.classList.add('carrito-item');
+                carritoItem.innerHTML = `
+                    <p>${item.name} - $${item.price}</p>
+                    <button onclick="removeFromCart('${item.name}')">Eliminar</button>
+                `;
+                carritoItems.appendChild(carritoItem);
+                total += item.price;
+            });
+            carritoTotal.textContent = `Total: $${total.toFixed(2)}`;
+            cartCount.textContent = carritoData.length;
+        }
+
+        function addToCart(name, price) {
+            carritoData.push({ name, price });
+            updateCart();
+        }
+
+        window.removeFromCart = function(name) {
+            const index = carritoData.findIndex(item => item.name === name);
+            if (index !== -1) {
+                carritoData.splice(index, 1);
+            }
+            updateCart();
+        }
+
+        juegoButtons.forEach(button => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault(); 
+                const product = this.closest('.product-1');
+                const titulo = product.querySelector('h3').textContent;
+                const precio = parseFloat(product.querySelector('.price p').textContent.replace('$', '').replace('.', ''));
+                addToCart(titulo, precio);
             });
         });
-    </script>
+
+        carritoIcon.addEventListener('click', function() {
+            carrito.style.display = carrito.style.display === 'block' ? 'none' : 'block';
+        });
+
+        btnVaciar.addEventListener('click', function() {
+            carritoData.length = 0;
+            updateCart();
+        });
+    });
+</script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="js/script.js"></script>
