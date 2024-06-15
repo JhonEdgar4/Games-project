@@ -328,19 +328,18 @@
             <div class="contact-content">
                 <h3>Completa tus datos personales</h3>
                 <form>
-                    <a href="../Games-project//play.php" class="btn-3">
-                        <span>Más populares</span>
+                    <a href="play.php">
+                        <span>Poúlares</span>
                     </a>
-                    <a href="../Games-project/Play/AccionPS.php" class="btn-3">
-                        <span class="btn-3">Acción</span>
+                    <a href="AccionPS.php">
+                        <span>Accion</span>
                     </a>
-                    <a href="../Games-project/Play/TerrorPS.php">
+                    <a href="TerrorPS.php">
                         <span>Terror</span>
                     </a>
-                    <a href="">
+                    <a href="AventuraPS.php">
                         <span>Aventura</span>
                     </a>
-                    <input type="submit" class="btn-3" value="Enviar">
                 </form>
             </div>
         </section>
