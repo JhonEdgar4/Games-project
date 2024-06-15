@@ -224,9 +224,9 @@
         <div class="product-content">
             
             <div class="product-1">
-                <img src="media/img/halo-infinitecampaña.jpg" alt="">
+                <img src="media/categoria_img/resident-evil-village-xbox-one-.jpg" alt="">
                 <div class="product-txt">
-                    <h3>Halo Infinite</h3>
+                    <h3>Resident evil village</h3>
                     <div class="price">
                         <p>$79.900</p>
                         <a href="#" class="btn-2">Comprar</a>
