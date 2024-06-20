@@ -317,7 +317,7 @@
                     <div class="product-txt">
                         <h3>Minecraft</h3>
                         <div class="price">
-                            <p>$91.900,00</p>
+                            <p>$91.900</p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
@@ -327,7 +327,7 @@
 
         <section id="contact-section" class="contact container">
             <div class="contact-content">
-                <h3>Completa tus datos personales</h3>
+                <h3>Categorias</h3>
                 <form>
                 <a href="nintendo.php">
                         <span>Poúlares</span>

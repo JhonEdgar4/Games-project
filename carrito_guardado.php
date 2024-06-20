@@ -193,7 +193,7 @@
                         echo "</tr>";
                     }
                 } else {
-                    echo "<tr><td colspan='3' class='empty-message'>No hay productos en el carrito guardado.</td></tr>";
+                    echo "<tr><td colspan='3' class='empty-message'>No hay productos guardados en el carrito.</td></tr>";
                 }
                 $conn->close();
                 ?>

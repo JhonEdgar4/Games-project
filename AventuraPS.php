@@ -210,123 +210,235 @@
         <section class="popular container">
             <h2>juegos populare</h2>
             <div class="popular-content">
-                <img src="media/img/god.png" alt="">
-                <img src="media/img/ratchet-clank-una-dimension-aparte.jpg" alt="">
-                <img src="media/img/residenevil.jpg" alt="">
-                <img src="media/img/mk1.jpg" alt="">
-                <img src="media/img/street.jpeg" alt="">
-                <img src="media/img/spiderman.jpg" alt="">
-                <img src="media/img/Horizon.jpg" alt="">
+                <img src="media/categoria_img/the_last_of_us.jpg" alt="">
+                <img src="media/categoria_img/god_of_war_2018.jpg" alt="">
+                <img src="media/categoria_img/Horizon_Forbidden_West.jpg" alt="">
+                <img src="media/categoria_img/village.jpg" alt="">
+                <img src="media/categoria_img/Ghostwire_Tokyo.jpg" alt="">
+                <img src="media/img/the-witcher-3-wild-hunt.jpg" alt="">
+                <img src="media/categoria_img/shadow_of_the_colossus.jpg" alt="">
             </div>
         </section>
 
         <main id="product-content" class="product container">
-            <h2>Todos los juegos que puedes comprar</h2>
-            <div class="product-content">
-                <div class="product-1">
-                    <img src="media/img/war.jpg.jpeg" alt="">
-                    <div class="product-txt">
-                        <h3>god of war</h3>
-                        <div class="price">
-                            <p>$79.900</p>
-                            <a href="#" class="btn-2">Comprar</a>
+        <!-- Sección para juegos de PS4 -->
+        <section id="ps4-games" class="product container">
+                <h2>Para PS4</h2>
+                <div class="product-content">
+                    <div class="product-1">
+                        <img src="media/categoria_img/the_last_of_us.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>The Last of Us Part II</h3>
+                            <div class="price">
+                                <p>$229,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/uncharted_4.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Uncharted 4: A Thief's End</h3>
+                            <div class="price">
+                                <p>$76,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/god_of_war_2018.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>God of War (2018)</h3>
+                            <div class="price">
+                                <p>$76,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/horizon_zero_dawn.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Horizon Zero Dawn</h3>
+                            <div class="price">
+                                <p>$76,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/ghost_of_tsushima.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Ghost of Tsushima</h3>
+                            <div class="price">
+                                <p>$229,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/Bloodborne.webp" alt="">
+                        <div class="product-txt">
+                            <h3>Bloodborne</h3>
+                            <div class="price">
+                                <p>$76,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/shadow_of_the_colossus.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Shadow of the Colossus (2018)</h3>
+                            <div class="price">
+                                <p>$76,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/img/the-witcher-3-wild-hunt.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>The Witcher 3: Wild Hunt</h3>
+                            <div class="price">
+                                <p>$76,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/nioh.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Nioh</h3>
+                            <div class="price">
+                                <p>$76,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/persona_5-2.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Persona 5</h3>
+                            <div class="price">
+                                <p>$76,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="product-1">
-                    <img src="media/img/ratchet-and-clank.jpg" alt="">
-                    <div class="product-txt">
-                        <h3>ratchet and clank</h3>
-                        <div class="price">
-                            <p>$74.900</p>
-                            <a href="#" class="btn-2">Comprar</a>
+            <!-- Sección para juegos de PS5 -->
+            <section id="ps5-games" class="product container">
+                <h2>Para PS5</h2>
+                <div class="product-content">
+                    <div class="product-1">
+                        <img src="media/categoria_img/demons-souls.webp" alt="">
+                        <div class="product-txt">
+                            <h3>Demon's Souls (2020)</h3>
+                            <div class="price">
+                                <p>$349,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/returnal.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Returnal</h3>
+                            <div class="price">
+                                <p>$349,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/miles_morales.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Spider-Man: Miles Morales</h3>
+                            <div class="price">
+                                <p>$269,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/ratchet_rift_apart.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Ratchet & Clank: Rift Apart</h3>
+                            <div class="price">
+                                <p>$349,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/Horizon_Forbidden_West.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Horizon Forbidden West</h3>
+                            <div class="price">
+                                <p>$349,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/village.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Resident Evil Village</h3>
+                            <div class="price">
+                                <p>$299,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/Deathloop.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Deathloop</h3>
+                            <div class="price">
+                                <p>$299,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/Sackboy-A-Big-Adventure.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Sackboy: A Big Adventure</h3>
+                            <div class="price">
+                                <p>$299,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/Ghostwire_Tokyo.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Ghostwire: Tokyo</h3>
+                            <div class="price">
+                                <p>$299,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/Kena_Bridge_of_Spirits.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Kena: Bridge of Spirits</h3>
+                            <div class="price">
+                                <p>$199,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="product-1">
-                    <img src="media/img/maxresdefault.jpg" alt="">
-                    <div class="product-txt">
-                        <h3>residen evil 4</h3>
-                        <div class="price">
-                            <p>$64.900</p>
-                            <a href="#" class="btn-2">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-1">
-                    <img src="media/img/MK1-Announce.webp" alt="">
-                    <div class="product-txt">
-                        <h3>Mortal kombat 1</h3>
-                        <div class="price">
-                            <p>$65.000</p>
-                            <a href="#" class="btn-2">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-1">
-                    <img src="media/img/streetfigter.jpg" alt="">
-                    <div class="product-txt">
-                        <h3>street fighter 6</h3>
-                        <div class="price">
-                            <p>$180.284</p>
-                            <a href="#" class="btn-2">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-1">
-                    <img src="media/img/marvels-spiderman-2.jpg" alt="">
-                    <div class="product-txt">
-                        <h3>spiderman 2</h3>
-                        <div class="price">
-                            <p>$94.900</p>
-                            <a href="#" class="btn-2">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-1">
-                    <img src="media/img/hzd.jpg" alt="">
-                    <div class="product-txt">
-                        <h3>Horizon</h3>
-                        <div class="price">
-                            <p>$49.900</p>
-                            <a href="#" class="btn-2">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-1">
-                    <img src="media/img/uncharted.webp" alt="">
-                    <div class="product-txt">
-                        <h3>uncharted</h3>
-                        <div class="price">
-                            <p>$80.000</p>
-                            <a href="#" class="btn-2">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-1">
-                    <img src="media/img/tlou.jpg" alt="">
-                    <div class="product-txt">
-                        <h3>THE LAST OF US REMASTERED</h3>
-                        <div class="price">
-                            <p>$39.900</p>
-                            <a href="#" class="btn-2">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </section>
         </main>
 
         <section id="contact-section" class="contact container">
             <div class="contact-content">
-                <h3>Completa tus datos personales</h3>
+                <h3>Categorias</h3>
                 <form>
                     <a href="play.php">
                         <span>Poúlares</span>

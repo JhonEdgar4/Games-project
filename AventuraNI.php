@@ -326,7 +326,7 @@
 
         <section id="contact-section" class="contact container">
             <div class="contact-content">
-                <h3>Completa tus datos personales</h3>
+                <h3>Categorias</h3>
                 <form>
                 <a href="nintendo.php">
                         <span>Poúlares</span>
