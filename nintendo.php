@@ -53,7 +53,7 @@
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
             padding: 20px;
-            display: none; /* Oculto por defecto */
+            display: none;
             z-index: 1000;
         }
 
@@ -82,6 +82,15 @@
             margin: 0;
         }
 
+        .carrito-item button {
+            background: #ff5a2c;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+
         .btn-vaciar {
             background: #ff5a2c;
             color: #fff;
@@ -100,6 +109,36 @@
             color: #fff;
             font-size: 18px;
             text-align: right;
+        }
+
+        /* Estilos adicionales */
+        .btn-2 {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .btn-2:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-3 {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn-3:hover {
+            background-color: #218838;
         }
     </style>
 </head>
@@ -174,17 +213,17 @@
         </div>
     </div>
 
-    <div class="carrito-icon" onclick="toggleCarrito()">
-        <ion-icon name="cart-outline"></ion-icon>
-        <span class="cart-count">0</span>
-    </div>
+<div class="carrito-icon" onclick="toggleCarrito()">
+    <ion-icon name="cart-outline"></ion-icon>
+    <span class="cart-count">0</span>
+</div>
 
-    <div class="carrito">
-        <h2>Tu Carrito</h2>
-        <div class="carrito-items"></div>
-        <button class="btn-vaciar">Vaciar Carrito</button>
-        <p class="carrito-total">Total: $0</p>
-    </div>
+<div class="carrito">
+    <h2>Tu Carrito</h2>
+    <div class="carrito-items"></div>
+    <button class="btn-vaciar">Guardar Carrito</button>
+    <p class="carrito-total">Total: $0</p>
+</div>
 
     <main>
         <header class="header">
@@ -349,66 +388,132 @@
     </main>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const juegoButtons = document.querySelectorAll('.btn-2');
-            const carritoIcon = document.querySelector('.carrito-icon');
-            const carrito = document.querySelector('.carrito');
-            const carritoItems = document.querySelector('.carrito-items');
-            const cartCount = document.querySelector('.cart-count');
-            const carritoTotal = document.querySelector('.carrito-total');
-            const btnVaciar = document.querySelector('.btn-vaciar');
+    document.addEventListener('DOMContentLoaded', function() {
+        const juegoButtons = document.querySelectorAll('.btn-2');
+        const carritoIcon = document.querySelector('.carrito-icon');
+        const carrito = document.querySelector('.carrito');
+        const carritoItems = document.querySelector('.carrito-items');
+        const cartCount = document.querySelector('.cart-count');
+        const carritoTotal = document.querySelector('.carrito-total');
+        const btnVaciar = document.querySelector('.btn-vaciar');
 
-            const carritoData = [];
+        const carritoData = [];
 
-            function updateCart() {
-                carritoItems.innerHTML = '';
-                let total = 0;
-                carritoData.forEach(item => {
-                    const carritoItem = document.createElement('div');
-                    carritoItem.classList.add('carrito-item');
-                    carritoItem.innerHTML = `
-                        <p>${item.name} - $${item.price}</p>
-                        <button onclick="removeFromCart('${item.name}')">Eliminar</button>
-                    `;
-                    carritoItems.appendChild(carritoItem);
-                    total += item.price;
-                });
-                carritoTotal.textContent = `Total: $${total.toFixed(2)}`;
-                cartCount.textContent = carritoData.length;
-            }
-
-            function addToCart(name, price) {
-                carritoData.push({ name, price });
-                updateCart();
-            }
-
-            window.removeFromCart = function(name) {
-                const index = carritoData.findIndex(item => item.name === name);
-                if (index !== -1) {
-                    carritoData.splice(index, 1);
-                }
-                updateCart();
-            }
-
-            juegoButtons.forEach(button => {
-                button.addEventListener('click', function(event) {
-                    event.preventDefault(); 
-                    const product = this.closest('.product-1');
-                    const titulo = product.querySelector('h3').textContent;
-                    const precio = parseFloat(product.querySelector('.price p').textContent.replace('$', '').replace('.', ''));
-                    addToCart(titulo, precio);
-                });
+        function updateCart() {
+            carritoItems.innerHTML = '';
+            let total = 0;
+            carritoData.forEach(item => {
+                const carritoItem = document.createElement('div');
+                carritoItem.classList.add('carrito-item');
+                carritoItem.innerHTML = `
+                    <p>${item.name} - $${item.price.toFixed(2)}</p>
+                    <button onclick="removeFromCart('${item.name}')">Eliminar</button>
+                `;
+                carritoItems.appendChild(carritoItem);
+                total += item.price;
             });
+            carritoTotal.textContent = `Total: $${total.toFixed(2)}`;
+            cartCount.textContent = carritoData.length;
+        }
 
-            carritoIcon.addEventListener('click', function() {
-                carrito.style.display = carrito.style.display === 'block' ? 'none' : 'block';
-            });
+        function addToCart(name, price) {
+            carritoData.push({ name, price });
+            updateCart();
+        }
 
-            btnVaciar.addEventListener('click', function() {
-                carritoData.length = 0;
-                updateCart();
+        window.removeFromCart = function(name) {
+            const index = carritoData.findIndex(item => item.name === name);
+            if (index !== -1) {
+                carritoData.splice(index, 1);
+            }
+            updateCart();
+        }
+
+        juegoButtons.forEach(button => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+                const product = this.closest('.product-1');
+                const titulo = product.querySelector('h3').textContent;
+                const precio = parseFloat(product.querySelector('.price p').textContent.replace('$', ''));
+                addToCart(titulo, precio);
             });
         });
-    </script>
+
+        carritoIcon.addEventListener('click', function() {
+            carrito.style.display = carrito.style.display === 'block' ? 'none' : 'block';
+        });
+
+        btnVaciar.addEventListener('click', function() {
+            if (carritoData.length === 0) {
+                alert('El carrito está vacío.');
+                return;
+            }
+
+            fetch('', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ cartItems: carritoData })
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert('Carrito guardado exitosamente.');
+                carritoData.length = 0;
+                updateCart();
+                window.location.href = 'carrito_guardado.php'; // Redireccionar al usuario
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    });
+</script>
+
+
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "prueba";
+
+    // Crear conexión
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    // Verificar conexión
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    // Obtener datos del carrito desde la solicitud POST
+    $data = json_decode(file_get_contents('php://input'), true);
+
+    if ($data) {
+        $cartItems = $data['cartItems'];
+
+        // Obtener el último id_carrito para generar el siguiente
+        $sql = "SELECT MAX(id_carrito) AS max_id FROM carrito";
+        $result = $conn->query($sql);
+        $row = $result->fetch_assoc();
+        $next_id_carrito = $row['max_id'] + 1;
+
+        // Insertar cada item del carrito con el id_carrito generado
+        foreach ($cartItems as $item) {
+            $name = $conn->real_escape_string($item['name']);
+            $price = $conn->real_escape_string($item['price']);
+
+            // Insertar utilizando el id_carrito generado
+            $sql_insert = "INSERT INTO carrito (nombre_producto, precio, id_carrito) VALUES ('$name', '$price', '$next_id_carrito')";
+
+            if ($conn->query($sql_insert) === TRUE) {
+                echo "Registro guardado correctamente";
+            } else {
+                echo "Error: " . $sql_insert . "<br>" . $conn->error;
+            }
+        }
+    }
+
+    $conn->close();
+}
+?>
 </body>
 </html>
