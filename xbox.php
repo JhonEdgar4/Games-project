@@ -360,24 +360,27 @@
     </main>
 
 
+
+
     <section id="contact-section" class="contact container">
-        <div class="contact-content">
-            <h3>Completa tus datos personales</h3>
-            <form>
-                <input type="text" id="Juego" name="Juego" placeholder="Juego">
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Número de identificación">
-                <input type="email" placeholder="Correo electrónico">
-                <select>
-                    <option value="" disabled selected>Selecciona tu método de pago</option>
-                    <option value="tarjeta">Tarjeta de crédito/débito</option>
-                    <option value="paypal">PayPal</option>
-                    <option value="transferencia">Transferencia bancaria</option>
-                </select>
-                <input type="submit" class="btn-3" value="Enviar">
-            </form>
-        </div>
-    </section>
+            <div class="contact-content">
+                <h3>Completa tus datos personales</h3>
+                <form>
+                <a href="xbox.php">
+                        <span>Poúlares</span>
+                    </a>
+                    <a href="AccionXbox.php">
+                        <span>Accion</span>
+                    </a>
+                    <a href="AventuraXbox.php">
+                        <span>Aventura</span>
+                    </a>
+                    <a href="TerrorXbox.php">
+                        <span>Terror</span>
+                    </a>
+                </form>
+            </div>
+        </section>    
     
     <footer class="footer container">
         <div class="link">
