@@ -210,123 +210,235 @@
         <section class="popular container">
             <h2>juegos populare</h2>
             <div class="popular-content">
-                <img src="media/img/god.png" alt="">
-                <img src="media/img/ratchet-clank-una-dimension-aparte.jpg" alt="">
-                <img src="media/img/residenevil.jpg" alt="">
-                <img src="media/img/mk1.jpg" alt="">
-                <img src="media/img/street.jpeg" alt="">
-                <img src="media/img/spiderman.jpg" alt="">
-                <img src="media/img/Horizon.jpg" alt="">
+                <img src="media/categoria_img/ghost_of_tsushima.jpg" alt="">
+                <img src="media/categoria_img/god_of_war_2018.jpg" alt="">
+                <img src="media/categoria_img/miles_morales.jpg" alt="">
+                <img src="media/categoria_img/spiderman.jpg" alt="">
+                <img src="media/categoria_img/red-dead-redemption-2.jpg" alt="">
+                <img src="media/categoria_img/assassin's_valhalla.jpg" alt="">
+                <img src="media/categoria_img/village.jpg" alt="">
             </div>
         </section>
 
         <main id="product-content" class="product container">
-            <h2>Juegos de acción</h2>
-            <div class="product-content">
-                <div class="product-1">
-                    <img src="" alt="">
-                    <div class="product-txt">
-                        <h3></h3>
-                        <div class="price">
-                            <p></p>
-                            <a href="#" class="btn-2">Comprar</a>
+        <!-- Sección para juegos de acción de PS4 -->
+        <section id="ps4-accion-games" class="product container">
+                <h2>Acción PS4</h2>
+                <div class="product-content">
+                    <div class="product-1">
+                        <img src="media/categoria_img/the_last_of_us.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>The Last of Us Part II</h3>
+                            <div class="price">
+                                <p>$180,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/god_of_war_2018.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>God of War</h3>
+                            <div class="price">
+                                <p>$150,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/ghost_of_tsushima.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Ghost of Tsushima</h3>
+                            <div class="price">
+                                <p>$200,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/uncharted_4.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Uncharted 4: A Thief's End</h3>
+                            <div class="price">
+                                <p>$120,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/horizon_zero_dawn.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Horizon Zero Dawn</h3>
+                            <div class="price">
+                                <p>$100,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/spiderman.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Spider-Man</h3>
+                            <div class="price">
+                                <p>$180,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/Bloodborne.webp" alt="">
+                        <div class="product-txt">
+                            <h3>Bloodborne</h3>
+                            <div class="price">
+                                <p>$80,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/shadows_die_twice.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Sekiro: Shadows Die Twice</h3>
+                            <div class="price">
+                                <p>$160,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/red-dead-redemption-2.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Red Dead Redemption 2</h3>
+                            <div class="price">
+                                <p>$190,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/Devil-May-Cry-5.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Devil May Cry 5</h3>
+                            <div class="price">
+                                <p>$120,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="product-1">
-                    <img src="" alt="">
-                    <div class="product-txt">
-                        <h3></h3>
-                        <div class="price">
-                            <p></p>
-                            <a href="#" class="btn-2">Comprar</a>
+            <!-- Sección para juegos de acción de PS5 -->
+            <section id="ps5-accion-games" class="product container">
+                <h2>Acción PS5</h2>
+                <div class="product-content">
+                    <div class="product-1">
+                        <img src="media/categoria_img/demons-souls.webp" alt="">
+                        <div class="product-txt">
+                            <h3>Demon's Souls</h3>
+                            <div class="price">
+                                <p>$280,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/ratchet_rift_apart.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Ratchet & Clank: Rift Apart</h3>
+                            <div class="price">
+                                <p>$270,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/miles_morales.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Spider-Man: Miles Morales</h3>
+                            <div class="price">
+                                <p>$200,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/returnal.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Returnal</h3>
+                            <div class="price">
+                                <p>$250,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/assassin's_valhalla.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Assassin's Creed Valhalla</h3>
+                            <div class="price">
+                                <p>$220,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/village.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Resident Evil Village</h3>
+                            <div class="price">
+                                <p>$230,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/far_cry_6.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Far Cry 6</h3>
+                            <div class="price">
+                                <p>$240,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/callofduty_cold_war.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Call of Duty: Black Ops Cold War</h3>
+                            <div class="price">
+                                <p>$250,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/cyber_punk.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Cyberpunk 2077</h3>
+                            <div class="price">
+                                <p>$200,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-1">
+                        <img src="media/categoria_img/Deathloop.jpg" alt="">
+                        <div class="product-txt">
+                            <h3>Deathloop</h3>
+                            <div class="price">
+                                <p>$230,000</p>
+                                <a href="#" class="btn-2">Comprar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="product-1">
-                    <img src="" alt="">
-                    <div class="product-txt">
-                        <h3></h3>
-                        <div class="price">
-                            <p></p>
-                            <a href="#" class="btn-2">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-1">
-                    <img src="" alt="">
-                    <div class="product-txt">
-                        <h3></h3>
-                        <div class="price">
-                            <p></p>
-                            <a href="#" class="btn-2">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-1">
-                    <img src="" alt="">
-                    <div class="product-txt">
-                        <h3></h3>
-                        <div class="price">
-                            <p></p>
-                            <a href="#" class="btn-2">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-1">
-                    <img src="" alt="">
-                    <div class="product-txt">
-                        <h3></h3>
-                        <div class="price">
-                            <p></p>
-                            <a href="#" class="btn-2">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-1">
-                    <img src="" alt="">
-                    <div class="product-txt">
-                        <h3></h3>
-                        <div class="price">
-                            <p></p>
-                            <a href="#" class="btn-2">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-1">
-                    <img src="" alt="">
-                    <div class="product-txt">
-                        <h3></h3>
-                        <div class="price">
-                            <p></p>
-                            <a href="#" class="btn-2">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-1">
-                    <img src="" alt="">
-                    <div class="product-txt">
-                        <h3></h3>
-                        <div class="price">
-                            <p></p>
-                            <a href="#" class="btn-2">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </section>
         </main>
 
         <section id="contact-section" class="contact container">
             <div class="contact-content">
-                <h3>Completa tus datos personales</h3>
+                <h3>Categorias</h3>
                 <form>
                 <a href="play.php">
                         <span>Poúlares</span>

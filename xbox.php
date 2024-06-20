@@ -363,24 +363,24 @@
 
 
     <section id="contact-section" class="contact container">
-            <div class="contact-content">
-                <h3>Completa tus datos personales</h3>
-                <form>
+        <div class="contact-content">
+            <h3>Categorias</h3>
+            <form>
                 <a href="xbox.php">
-                        <span>Poúlares</span>
-                    </a>
-                    <a href="AccionXbox.php">
-                        <span>Accion</span>
-                    </a>
-                    <a href="AventuraXbox.php">
-                        <span>Aventura</span>
-                    </a>
-                    <a href="TerrorXbox.php">
-                        <span>Terror</span>
-                    </a>
-                </form>
-            </div>
-        </section>    
+                    <span>Populares</span>
+                </a>
+                <a href="AccionXBX.php">
+                    <span>Accion</span>
+                </a>
+                <a href="AventuraXBX.php">
+                    <span>Aventura</span>
+                </a>
+                <a href="TerrorXBX.php">
+                    <span>Terror</span>
+                </a>
+            </form>
+        </div>
+    </section>
     
     <footer class="footer container">
         <div class="link">
