@@ -128,19 +128,19 @@
                     <li>
                         <a href="play.php">
                             <ion-icon name="logo-playstation"></ion-icon>
-                        <span>Play</span>
+                            <span>Play</span>
                         </a>
                     </li>
                     <li>
                         <a href="xbox.php">
                             <ion-icon name="logo-xbox"></ion-icon>
-                        <Span>Xbox</Span>
+                            <Span>Xbox</Span>
                         </a>
                     </li>
                     <li>
                         <a href="nintendo.php">
                             <ion-icon name="game-controller-outline"></ion-icon>
-                        <span>Nintendo</span>
+                            <span>Nintendo</span>
                         </a>
                     </li>
                     <li>
@@ -224,99 +224,99 @@
             <h2>Todos los juegos que puedes comprar</h2>
             <div class="product-content">
                 <div class="product-1">
-                    <img src="" alt="">
+                    <img src="media/img/war.jpg.jpeg" alt="">
                     <div class="product-txt">
-                        <h3></h3>
+                        <h3>god of war</h3>
                         <div class="price">
-                            <p></p>
+                            <p>$79.900</p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="product-1">
-                    <img src="" alt="">
+                    <img src="media/img/ratchet-and-clank.jpg" alt="">
                     <div class="product-txt">
-                        <h3></h3>
+                        <h3>ratchet and clank</h3>
                         <div class="price">
-                            <p></p>
+                            <p>$74.900</p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="product-1">
-                    <img src="" alt="">
+                    <img src="media/img/maxresdefault.jpg" alt="">
                     <div class="product-txt">
-                        <h3></h3>
+                        <h3>residen evil 4</h3>
                         <div class="price">
-                            <p></p>
+                            <p>$64.900</p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="product-1">
-                    <img src="" alt="">
+                    <img src="media/img/MK1-Announce.webp" alt="">
                     <div class="product-txt">
-                        <h3></h3>
+                        <h3>Mortal kombat 1</h3>
                         <div class="price">
-                            <p></p>
+                            <p>$65.000</p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="product-1">
-                    <img src="" alt="">
+                    <img src="media/img/streetfigter.jpg" alt="">
                     <div class="product-txt">
-                        <h3></h3>
+                        <h3>street fighter 6</h3>
                         <div class="price">
-                            <p></p>
+                            <p>$180.284</p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="product-1">
-                    <img src="" alt="">
+                    <img src="media/img/marvels-spiderman-2.jpg" alt="">
                     <div class="product-txt">
-                        <h3></h3>
+                        <h3>spiderman 2</h3>
                         <div class="price">
-                            <p></p>
+                            <p>$94.900</p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="product-1">
-                    <img src="" alt="">
+                    <img src="media/img/hzd.jpg" alt="">
                     <div class="product-txt">
-                        <h3></h3>
+                        <h3>Horizon</h3>
                         <div class="price">
-                            <p></p>
+                            <p>$49.900</p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="product-1">
-                    <img src="" alt="">
+                    <img src="media/img/uncharted.webp" alt="">
                     <div class="product-txt">
-                        <h3></h3>
+                        <h3>uncharted</h3>
                         <div class="price">
-                            <p></p>
+                            <p>$80.000</p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="product-1">
-                    <img src="" alt="">
+                    <img src="media/img/tlou.jpg" alt="">
                     <div class="product-txt">
-                        <h3></h3>
+                        <h3>THE LAST OF US REMASTERED</h3>
                         <div class="price">
-                            <p></p>
+                            <p>$39.900</p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
@@ -328,7 +328,7 @@
             <div class="contact-content">
                 <h3>Completa tus datos personales</h3>
                 <form>
-                <a href="play.php">
+                    <a href="play.php">
                         <span>Poúlares</span>
                     </a>
                     <a href="AccionPS.php">
@@ -350,9 +350,8 @@
             </div>
             <div class="link">
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="Registrarse.html">Ingresar / Resgistrarse</a></li>
-                    <li><a href="Contactenos.html">Contacto</a></li>
+                    <li><a href="index.php">Inicio</a></li>
+                    <li><a href="nosotros.php">Contacto</a></li>
                 </ul>
             </div>
         </footer>

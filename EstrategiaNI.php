@@ -220,22 +220,22 @@
         </section>
 
         <section id="product-content" class="product container">
-            <h2>Todos los juegos que puedes comprar</h2>
+            <h2>Juegos de estrategia</h2>
             <div class="product-content">
                 <div class="product-1">
-                    <img src="media/img/breath.avif" alt="">
+                    <img src="media/categoria_img/Minecraft_Switch_29.webp" alt="">
                     <div class="product-txt">
-                        <h3>The Legend of Zelda™: Breath of the Wild</h3>
+                        <h3>Minecraft</h3>
                         <div class="price">
-                            <p>$79.900</p>
+                            <p>$91.900</p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="product-1">
-                    <img src="media/img/tears.avif" alt="">
+                    <img src="media/categoria_img/fire-emblem.jpg" alt="">
                     <div class="product-txt">
-                        <h3>The Legend of Zelda™: Tears of the Kingdom</h3>
+                        <h3>Fire Emblem Warriors: Three Hopes</h3>
                         <div class="price">
                             <p>$144.000</p>
                             <a href="#" class="btn-2">Comprar</a>
@@ -243,71 +243,81 @@
                     </div>
                 </div>
                 <div class="product-1">
-                    <img src="media/img/wonder.avif" alt="">
+                    <img src="media/categoria_img/sparks.jpg" alt="">
                     <div class="product-txt">
-                        <h3>Super Mario Bros.™ Wonder</h3>
+                        <h3>MARIO + RABBIDS SPARKS OF HOPE</h3>
                         <div class="price">
-                            <p>$198.000</p>
+                            <p>$75.790</p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="product-1">
-                    <img src="media/img/smash.avif" alt="">
+                    <img src="media/categoria_img/triangle.jpg" alt="">
                     <div class="product-txt">
-                        <h3>Super Smash Bros.™ Ultimate</h3>
+                        <h3>TRIANGLE STRATEGY™</h3>
                         <div class="price">
-                            <p>$139.000</p>
+                            <p>$195.300</p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="product-1">
-                    <img src="media/img/newhorizons.avif" alt="">
+                    <img src="media/categoria_img/pikmin.jpg" alt="">
                     <div class="product-txt">
-                        <h3>Animal Crossing™: New Horizons</h3>
+                        <h3>Pikmin™ 3 Deluxe</h3>
                         <div class="price">
-                            <p>$123.000</p>
+                            <p>$279.000</p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="product-1">
-                    <img src="media/img/rise.avif" alt="">
+                    <img src="media/categoria_img/fire-emblem-three houses.jpg" alt="">
                     <div class="product-txt">
-                        <h3>Monster Hunter Rise</h3>
+                        <h3>Fire Emblem™: Three Houses</h3>
                         <div class="price">
-                            <p>$38.900</p>
+                            <p>$279.000</p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="product-1">
-                    <img src="media/img/violet.avif" alt="">
+                    <img src="media/categoria_img/cult.jpg" alt="">
                     <div class="product-txt">
-                        <h3>Pokémon™ Violet</h3>
+                        <h3>Cult of the Lamb</h3>
                         <div class="price">
-                            <p>$192.044</p>
+                            <p>$70.000</p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="product-1">
-                    <img src="media/img/scarlet.avif" alt="">
+                    <img src="media/categoria_img/overcooked.png" alt="">
                     <div class="product-txt">
-                        <h3>Pokémon™ Scarlet</h3>
+                        <h3>Overcooked! 2</h3>
                         <div class="price">
-                            <p>$130.000</p>
+                            <p>$63.900</p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="product-1">
-                    <img src="media/img/automata.avif" alt="">
+                    <img src="media/categoria_img/persone5.jpg" alt="">
                     <div class="product-txt">
-                        <h3>NieR:Automata The End of YoRHa Edition</h3>
+                        <h3>Persona 5 Tactica</h3>
                         <div class="price">
-                            <p>$116.884</p>
+                            <p>$245.999</p>
+                            <a href="#" class="btn-2">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    <img src="media/categoria_img/civilization.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Sid Meier's Civilization VI</h3>
+                        <div class="price">
+                            <p>$60.000</p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
@@ -319,17 +329,18 @@
             <div class="contact-content">
                 <h3>Completa tus datos personales</h3>
                 <form>
-                    <input type="text" id="Juego" name="Juego" placeholder="Juego">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Número de identificación">
-                    <input type="email" placeholder="Correo electrónico">
-                    <select>
-                        <option value="" disabled selected>Selecciona tu método de pago</option>
-                        <option value="tarjeta">Tarjeta de crédito/débito</option>
-                        <option value="paypal">PayPal</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                    </select>
-                    <input type="submit" class="btn-3" value="Enviar">
+                <a href="nintendo.php">
+                        <span>Poúlares</span>
+                    </a>
+                    <a href="AccionNI.php">
+                        <span>Accion</span>
+                    </a>
+                    <a href="AventuraNI.php">
+                        <span>Aventura</span>
+                    </a>
+                    <a href="EstrategiaNI.php">
+                        <span>Estrategia</span>
+                    </a>
                 </form>
             </div>
         </section>
@@ -341,8 +352,7 @@
             <div class="link">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="Registrarse.html">Ingresar / Resgistrarse</a></li>
-                    <li><a href="Contactenos.html">Contacto</a></li>
+                    <li><a href="nosotros.php">Contacto</a></li>
                 </ul>
             </div>
         </footer>
@@ -410,5 +420,8 @@
             });
         });
     </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
