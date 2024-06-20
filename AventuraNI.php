@@ -26,7 +26,6 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             z-index: 1000;
         }
-
         .carrito-icon ion-icon {
             font-size: 24px;
             color: #fff;
@@ -196,7 +195,7 @@
                 <div class="header-txt">
                     <h1>Compra todos los <span>juegos</span> <br> que quieras </h1>
                     <p>
-                        En esta página web encontrarás todos los juegos de Nintendo.
+                        Juegos de Aventura
                     </p>
                     <div class="butons">
                         <a href="#contact-section" class="btn-1">Información</a>
@@ -220,94 +219,104 @@
         </section>
 
         <section id="product-content" class="product container">
-            <h2>Todos los juegos que puedes comprar</h2>
+            <h2>Juegos de aventura disponibles</h2>
             <div class="product-content">
-                <div class="product-1">
-                    <img src="media/img/breath.avif" alt="">
-                    <div class="product-txt">
-                        <h3>The Legend of Zelda™: Breath of the Wild</h3>
-                        <div class="price">
-                            <p>$79.900</p>
-                            <a href="#" class="btn-2">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-1">
-                    <img src="media/img/tears.avif" alt="">
-                    <div class="product-txt">
-                        <h3>The Legend of Zelda™: Tears of the Kingdom</h3>
-                        <div class="price">
-                            <p>$144.000</p>
-                            <a href="#" class="btn-2">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-1">
-                    <img src="media/img/wonder.avif" alt="">
-                    <div class="product-txt">
-                        <h3>Super Mario Bros.™ Wonder</h3>
-                        <div class="price">
-                            <p>$198.000</p>
-                            <a href="#" class="btn-2">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-1">
-                    <img src="media/img/smash.avif" alt="">
-                    <div class="product-txt">
-                        <h3>Super Smash Bros.™ Ultimate</h3>
-                        <div class="price">
-                            <p>$139.000</p>
-                            <a href="#" class="btn-2">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-1">
-                    <img src="media/img/newhorizons.avif" alt="">
-                    <div class="product-txt">
-                        <h3>Animal Crossing™: New Horizons</h3>
-                        <div class="price">
-                            <p>$123.000</p>
-                            <a href="#" class="btn-2">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-1">
-                    <img src="media/img/rise.avif" alt="">
-                    <div class="product-txt">
-                        <h3>Monster Hunter Rise</h3>
-                        <div class="price">
-                            <p>$38.900</p>
-                            <a href="#" class="btn-2">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-1">
-                    <img src="media/img/violet.avif" alt="">
-                    <div class="product-txt">
-                        <h3>Pokémon™ Violet</h3>
-                        <div class="price">
-                            <p>$192.044</p>
-                            <a href="#" class="btn-2">Comprar</a>
-                        </div>
-                    </div>
-                </div>
                 <div class="product-1">
                     <img src="media/img/scarlet.avif" alt="">
                     <div class="product-txt">
                         <h3>Pokémon™ Scarlet</h3>
                         <div class="price">
-                            <p>$130.000</p>
+                            <p>$279.000</p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="product-1">
-                    <img src="media/img/automata.avif" alt="">
+                    <img src="media/categoria_img/packshot-pokemon-violet.png" alt="">
                     <div class="product-txt">
-                        <h3>NieR:Automata The End of YoRHa Edition</h3>
+                        <h3></h3>Pokémon™ Violet
                         <div class="price">
-                            <p>$116.884</p>
+                            <p>$279.000</p>
+                            <a href="#" class="btn-2">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    <img src="media/categoria_img/scarlet-violet.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Paquete doble de Pokémon™ Scarlet y Pokémon™ Violet</h3>
+                        <div class="price">
+                            <p>$559.000</p>
+                            <a href="#" class="btn-2">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    <img src="media/categoria_img/it-take.png" alt="">
+                    <div class="product-txt">
+                        <h3>It Takes Two</h3>
+                        <div class="price">
+                            <p>$79.999</p>
+                            <a href="#" class="btn-2">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    <img src="media/categoria_img/harvestella.webp" alt="">
+                    <div class="product-txt">
+                        <h3>HARVESTELLA</h3>
+                        <div class="price">
+                            <p>$238.000</p>
+                            <a href="#" class="btn-2">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    <img src="media/categoria_img/hero_sp.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Disney Illusion Island</h3>
+                        <div class="price">
+                            <p>$130.900</p>
+                            <a href="#" class="btn-2">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    <img src="media/categoria_img/return_to_monkey_island.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Return to Monkey Island</h3>
+                        <div class="price">
+                            <p>$35.000</p>
+                            <a href="#" class="btn-2">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    <img src="media/categoria_img/Minecraft_Switch_29.webp" alt="">
+                    <div class="product-txt">
+                        <h3>Minecraft</h3>
+                        <div class="price">
+                            <p>$91.900</p>
+                            <a href="#" class="btn-2">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    <img src="media/categoria_img/pac-man.png" alt="">
+                    <div class="product-txt">
+                        <h3>PAC-MAN WORLD Re-PAC</h3>
+                        <div class="price">
+                            <p>$111.900</p>
+                            <a href="#" class="btn-2">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    <img src="media/categoria_img/no-mans-sky.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>No Man's Sky</h3>
+                        <div class="price">
+                            <p>$259.999</p>
                             <a href="#" class="btn-2">Comprar</a>
                         </div>
                     </div>
@@ -319,17 +328,18 @@
             <div class="contact-content">
                 <h3>Completa tus datos personales</h3>
                 <form>
-                    <input type="text" id="Juego" name="Juego" placeholder="Juego">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Número de identificación">
-                    <input type="email" placeholder="Correo electrónico">
-                    <select>
-                        <option value="" disabled selected>Selecciona tu método de pago</option>
-                        <option value="tarjeta">Tarjeta de crédito/débito</option>
-                        <option value="paypal">PayPal</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                    </select>
-                    <input type="submit" class="btn-3" value="Enviar">
+                <a href="nintendo.php">
+                        <span>Poúlares</span>
+                    </a>
+                    <a href="AccionNI.php">
+                        <span>Accion</span>
+                    </a>
+                    <a href="AventuraNI.php">
+                        <span>Terror</span>
+                    </a>
+                    <a href="EstrategiaNI.php">
+                        <span>Aventura</span>
+                    </a>
                 </form>
             </div>
         </section>
@@ -340,9 +350,8 @@
             </div>
             <div class="link">
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="Registrarse.html">Ingresar / Resgistrarse</a></li>
-                    <li><a href="Contactenos.html">Contacto</a></li>
+                    <li><a href="index.php">Inicio</a></li>
+                    <li><a href="nosotros.php">Contacto</a></li>
                 </ul>
             </div>
         </footer>
@@ -410,5 +419,8 @@
             });
         });
     </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

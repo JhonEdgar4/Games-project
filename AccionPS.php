@@ -350,9 +350,8 @@
             </div>
             <div class="link">
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="Registrarse.html">Ingresar / Resgistrarse</a></li>
-                    <li><a href="Contactenos.html">Contacto</a></li>
+                    <li><a href="index.php">Inicio</a></li>
+                    <li><a href="nosotros.php">Contacto</a></li>
                 </ul>
             </div>
         </footer>

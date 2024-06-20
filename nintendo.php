@@ -319,17 +319,18 @@
             <div class="contact-content">
                 <h3>Completa tus datos personales</h3>
                 <form>
-                    <input type="text" id="Juego" name="Juego" placeholder="Juego">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Número de identificación">
-                    <input type="email" placeholder="Correo electrónico">
-                    <select>
-                        <option value="" disabled selected>Selecciona tu método de pago</option>
-                        <option value="tarjeta">Tarjeta de crédito/débito</option>
-                        <option value="paypal">PayPal</option>
-                        <option value="transferencia">Transferencia bancaria</option>
-                    </select>
-                    <input type="submit" class="btn-3" value="Enviar">
+                <a href="nintendo.php">
+                        <span>Poúlares</span>
+                    </a>
+                    <a href="AccionNI.php">
+                        <span>Accion</span>
+                    </a>
+                    <a href="AventuraNI.php">
+                        <span>Aventura</span>
+                    </a>
+                    <a href="EstrategiaNI.php">
+                        <span>Estartegia</span>
+                    </a>
                 </form>
             </div>
         </section>
@@ -340,9 +341,8 @@
             </div>
             <div class="link">
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="Registrarse.html">Ingresar / Resgistrarse</a></li>
-                    <li><a href="Contactenos.html">Contacto</a></li>
+                    <li><a href="index.php">Inicio</a></li>
+                    <li><a href="nosotros.php">Contacto</a></li>
                 </ul>
             </div>
         </footer>
