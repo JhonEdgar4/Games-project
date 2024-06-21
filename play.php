@@ -148,13 +148,10 @@
         <div class="barra-lateral">
             <div>
                 <div class="nombre-pagina">
-                    <ion-icon id="cloud" name="cloud-outline"></ion-icon>
+                    <img src="media/img/logo.jpeg" alt="55" height="50">
                     <span>PIXELEMPOIRO</span>
-                    </div>
-                    <button class="boton">
-                        <ion-icon name="add-outline"></ion-icon>
-                        <span>Create new</span>  
-                    </button>
+                </div>
+
             </div>
             <nav class="navegacion">
                 <ul>
@@ -184,8 +181,20 @@
                     </li>
                     <li>
                         <a href="nosotros.php">
-                            <ion-icon name="person-outline"></ion-icon>
-                        <span>Nosotros</span>
+                            <ion-icon name="people-outline"></ion-icon>
+                            <span>Nosotros</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mision-vision.php">
+                            <ion-icon name="diamond-outline"></ion-icon>
+                            <span>Mision y Vision</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="proposito.php">
+                            <ion-icon name="star-outline"></ion-icon>
+                            <span>Porposito</span>
                         </a>
                     </li>
                 </ul>
@@ -237,9 +246,9 @@
             <div class="header-content container">
                 <div class="header-txt">
                     <h1>Compra todo los <span>juegos</span> <br> que quieras </h1>
-                    <p>En esta pagina web encontraras todos los juegos de play stations</p>
+                    <p>En esta pagina encontraras los juegos más populares de la plataforma de Play Station</p>
                     <div class="butons">
-                        <a href="#contact-section" class="btn-1">Informacion</a>
+                        <a href="#contact-section" class="btn-1">categorias</a>
                         <a href="#product-content" class="btn-1">Compras</a>
                     </div>
                 </div>
@@ -260,7 +269,7 @@
         </section>
 
         <main id="product-content" class="product container">
-            <h2>Todos los juegos que puedes comprar</h2>
+            <h2>Juegos populares</h2>
             <div class="product-content">
                 <div class="product-1">
                     <img src="media/img/war.jpg.jpeg" alt="">
