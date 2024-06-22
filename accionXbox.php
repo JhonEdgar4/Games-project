@@ -386,7 +386,7 @@
             </div>
 
             <div class="product-1">
-                <img src="media/categoria_img/A_Plague_Tale_Requiem.jpg" alt="">
+                <img src="media/categoria_img/a_" alt="">
                 <div class="product-txt">
                     <h3>A Plague Tale: Requiem</h3>
                     <div class="price">
@@ -397,27 +397,6 @@
             </div>
         </div>
     </main>
-
-    <section id="contact-section" class="contact container">
-            <div class="contact-content">
-                <h3>Categorias</h3>
-                <form>
-                <a href="xbox.php">
-                        <span>Poúlares</span>
-                    </a>
-                    <a href="AccionXbox.php">
-                        <span>Accion</span>
-                    </a>
-                    <a href="AventuraXbox.php">
-                        <span>Aventura</span>
-                    </a>
-                    <a href="TerrorXbox.php">
-                        <span>Terror</span>
-                    </a>
-                </form>
-            </div>
-        </section>
-
 </main>
 
 <script>

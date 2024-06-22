@@ -153,62 +153,56 @@
         <span>PIXELEMPOIRO</span>
     </div>
 
-</div>
-<nav class="navegacion">
-    <ul>
-        <li>
-            <a href="index.php">
-                <ion-icon name="home-outline"></ion-icon>
-            <span>Inicio</span>
-            </a>
-        </li>
-        <li>
-            <a href="play.php">
-                <ion-icon name="logo-playstation"></ion-icon>
-                <span>Play</span>
-            </a>
-        </li>
-        <li>
-            <a href="xbox.php">
-                <ion-icon name="logo-xbox"></ion-icon>
-                <Span>Xbox</Span>
-            </a>
-        </li>
-        <li>
-            <a href="nintendo.php">
-                <ion-icon name="game-controller-outline"></ion-icon>
-                <span>Nintendo</span>
-            </a>
-        </li>
-        <li>
-            <a href="nosotros.php">
-                <ion-icon name="people-outline"></ion-icon>
-                <span>Nosotros</span>
-            </a>
-        </li>
-        <li>
-            <a href="mision-vision.php">
-                <ion-icon name="diamond-outline"></ion-icon>
-                <span>Mision y Vision</span>
-            </a>
-        </li>
-        <li>
-            <a href="proposito.php">
-                <ion-icon name="star-outline"></ion-icon>
-                <span>Porposito</span>
-            </a>
-        </li>
-        <li>
-            <a href="comentario.php">
-                <ion-icon name="mail-outline"></ion-icon>
-                <span>Comentarios</span>
-            </a>
-        </li>
-    </ul>
-</nav>
-
-<div>
-    <div class="linea"></div>
+            </div>
+            <nav class="navegacion">
+                <ul>
+                    <li>
+                        <a href="index.php">
+                            <ion-icon name="home-outline"></ion-icon>
+                        <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="play.php">
+                            <ion-icon name="logo-playstation"></ion-icon>
+                            <span>Play</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="xbox.php">
+                            <ion-icon name="logo-xbox"></ion-icon>
+                            <Span>Xbox</Span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nintendo.php">
+                            <ion-icon name="game-controller-outline"></ion-icon>
+                            <span>Nintendo</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nosotros.php">
+                            <ion-icon name="people-outline"></ion-icon>
+                            <span>Nosotros</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mision-vision.php">
+                            <ion-icon name="diamond-outline"></ion-icon>
+                            <span>Mision y Vision</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="proposito.php">
+                            <ion-icon name="star-outline"></ion-icon>
+                            <span>Porposito</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div>
+                <div class="linea"></div>
 
     <div class="modo-oscuro">
         <div class="info">
