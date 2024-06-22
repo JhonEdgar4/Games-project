@@ -188,6 +188,12 @@
                         <span>Nosotros</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="comentario.php">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <span>Comentarios</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             
