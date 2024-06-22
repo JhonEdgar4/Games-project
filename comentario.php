@@ -103,7 +103,7 @@ $result = $conn->query($sql);
         <form action="comentarios.php" method="post">
             <label for="nombre">Nombre:</label><br>
             <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
-            <label for="comentario">Comentario:</label><br>
+            <label for="comentario">Comentarios:</label><br>
             <textarea id="comentario" name="comentario" rows="4" placeholder="Escribe tu comentario aquí" required></textarea><br><br>
             <button type="submit">Enviar comentario</button>
         </form>
