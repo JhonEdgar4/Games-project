@@ -217,7 +217,7 @@
                 <div class="modo-oscuro">
                     <div class="info">
                         <ion-icon name="moon-outline"></ion-icon>
-                        <span>Dark Mode</span>   
+                        <span>Darks Mode</span>   
                     </div>
                     <div class="switch">
                         <div class="base">
