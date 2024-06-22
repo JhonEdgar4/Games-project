@@ -22,12 +22,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("ss", $nombre, $comentario);
 
     if ($stmt->execute()) {
-        echo "<p>Comentario guardado exitosamente.</p>";
+        echo "<script>console.log('Comentario guardado exitosamente.');</script>";
     } else {
-        echo "<p>Error al guardar el comentario: " . $conn->error . "</p>";
+        echo "<script>console.log('Error al guardar el comentario: " . $conn->error . "');</script>";
     }
 
     $stmt->close();
+    // Redirigir para evitar el reenvío del formulario al recargar la página
+    header("Location: comentario.php");
+    exit;
 }
 
 // Recuperar los comentarios de la base de datos
@@ -40,98 +43,94 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="text/css" href="media/img/logo.jpeg">
     <title>Comentarios</title>
     <link rel="stylesheet" type="text/css" href="css/comentario.css">
     <link rel="stylesheet" type="text/css" href="css/barralateral.css">
-
 </head>
 <body>
 
 <div class="menu">
-        <ion-icon name="menu-outline"></ion-icon>
-        <ion-icon name="close-outline"></ion-icon>
-    </div>
+    <ion-icon name="menu-outline"></ion-icon>
+    <ion-icon name="close-outline"></ion-icon>
+</div>
 
-    <div class="barra-lateral">
-
-            <div>
-                <div class="nombre-pagina">
-                    <img src="media/img/logo.jpeg" alt="55" height="50">
-                    <span>PIXELEMPOIRO</span>
-                </div>
-
-            </div>
-            <nav class="navegacion">
-                <ul>
-                    <li>
-                        <a href="index.php">
-                            <ion-icon name="home-outline"></ion-icon>
-                        <span>Inicio</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="play.php">
-                            <ion-icon name="logo-playstation"></ion-icon>
-                            <span>Play</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="xbox.php">
-                            <ion-icon name="logo-xbox"></ion-icon>
-                            <Span>Xbox</Span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="nintendo.php">
-                            <ion-icon name="game-controller-outline"></ion-icon>
-                            <span>Nintendo</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="nosotros.php">
-                            <ion-icon name="people-outline"></ion-icon>
-                            <span>Nosotros</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mision-vision.php">
-                            <ion-icon name="diamond-outline"></ion-icon>
-                            <span>Mision y Vision</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="proposito.php">
-                            <ion-icon name="star-outline"></ion-icon>
-                            <span>Porposito</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="comentario.php">
-                            <ion-icon name="mail-outline"></ion-icon>
-                            <span>Comentarios</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            
-            <div>
-                <div class="linea"></div>
-
-                <div class="modo-oscuro">
-                    <div class="info">
-                        <ion-icon name="moon-outline"></ion-icon>
-                        <span>Dark Mode</span>   
-                    </div>
-                    <div class="switch">
-                        <div class="base">
-                            <dev class="circulo">
-                            </dev>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+<div class="barra-lateral">
+    <div>
+        <div class="nombre-pagina">
+            <img src="media/img/logo.jpeg" alt="55" height="50">
+            <span>PIXELEMPOIRO</span>
         </div>
+    </div>
+    <nav class="navegacion">
+        <ul>
+            <li>
+                <a href="index.php">
+                    <ion-icon name="home-outline"></ion-icon>
+                    <span>Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="play.php">
+                    <ion-icon name="logo-playstation"></ion-icon>
+                    <span>Play</span>
+                </a>
+            </li>
+            <li>
+                <a href="xbox.php">
+                    <ion-icon name="logo-xbox"></ion-icon>
+                    <Span>Xbox</Span>
+                </a>
+            </li>
+            <li>
+                <a href="nintendo.php">
+                    <ion-icon name="game-controller-outline"></ion-icon>
+                    <span>Nintendo</span>
+                </a>
+            </li>
+            <li>
+                <a href="nosotros.php">
+                    <ion-icon name="people-outline"></ion-icon>
+                    <span>Nosotros</span>
+                </a>
+            </li>
+            <li>
+                <a href="mision-vision.php">
+                    <ion-icon name="diamond-outline"></ion-icon>
+                    <span>Mision y Vision</span>
+                </a>
+            </li>
+            <li>
+                <a href="proposito.php">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>Porposito</span>
+                </a>
+            </li>
+            <li>
+                <a href="comentario.php">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <span>Comentarios</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div>
+        <div class="linea"></div>
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>   
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <dev class="circulo"></dev>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <main>
 <div class="container">
     <h1>Comentarios</h1>
@@ -161,7 +160,6 @@ $result = $conn->query($sql);
         ?>
     </div>
 </div>
-
 </main>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

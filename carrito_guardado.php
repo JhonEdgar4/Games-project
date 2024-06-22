@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Factura</title>
+    <link rel="icon" type="text/css" href="media/img/logo.jpeg">
     <style>
         body {
             font-family: Arial, sans-serif;
