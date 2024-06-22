@@ -150,6 +150,7 @@
     </div>
 
     <div class="barra-lateral">
+
             <div>
                 <div class="nombre-pagina">
                     <img src="media/img/logo.jpeg" alt="55" height="50">
@@ -201,6 +202,12 @@
                             <span>Porposito</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="comentario.php">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <span>Comentarios</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             
@@ -223,7 +230,8 @@
             
         </div>
 
-<div class="carrito-icon" onclick="toggleCarrito()">
+
+        <div class="carrito-icon" onclick="toggleCarrito()">
     <ion-icon name="cart-outline"></ion-icon>
     <span class="cart-count">0</span>
 </div>

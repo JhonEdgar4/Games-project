@@ -150,6 +150,7 @@
     </div>
 
     <div class="barra-lateral">
+
             <div>
                 <div class="nombre-pagina">
                     <img src="media/img/logo.jpeg" alt="55" height="50">
@@ -201,8 +202,33 @@
                             <span>Porposito</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="comentario.php">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <span>Comentarios</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
+            
+            <div>
+                <div class="linea"></div>
+
+                <div class="modo-oscuro">
+                    <div class="info">
+                        <ion-icon name="moon-outline"></ion-icon>
+                        <span>Dark Mode</span>   
+                    </div>
+                    <div class="switch">
+                        <div class="base">
+                            <dev class="circulo">
+                            </dev>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
             
             <div>
                 <div class="linea"></div>

@@ -16,6 +16,7 @@
     </div>
 
     <div class="barra-lateral">
+
             <div>
                 <div class="nombre-pagina">
                     <img src="media/img/logo.jpeg" alt="55" height="50">
@@ -65,6 +66,12 @@
                         <a href="proposito.php">
                             <ion-icon name="star-outline"></ion-icon>
                             <span>Porposito</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comentario.php">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <span>Comentarios</span>
                         </a>
                     </li>
                 </ul>
