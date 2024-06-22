@@ -1,0 +1,105 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Estilos de encabezados */
+h1 {
+    font-size: 2.5em;
+    color: #007BFF;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #343A40;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+}
+
+/* Estilos de párrafos */
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Estilos de listas con clase .custom-list */
+.custom-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.custom-list li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.custom-list li:before {
+    content: '\2022';
+    color: #007BFF;
+    font-weight: bold;
+    display: inline-block;
+    width: 20px;
+    margin-left: -20px;
+}
+
+/* Estilos de texto en negrita */
+strong {
+    color: #007BFF;
+}
+
+/* Estilos de miembros del equipo */
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #007BFF;
+}
+
+.team-member div {
+    flex: 1;
+}
+
+.team-member h3 {
+    margin: 0 0 10px;
+    font-size: 1.4em;
+    color: #007BFF;
+}
+
+.team-member p {
+    margin: 0;
+    font-size: 1em;
+    color: #666;
+}

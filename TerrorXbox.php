@@ -150,66 +150,78 @@
 </div>
 
 <div class="barra-lateral">
-    <div>
-        <div class="nombre-pagina">
-            <ion-icon id="cloud" name="cloud-outline"></ion-icon>
-            <span>PIXELEMPOIRO</span>
-        </div>
-        <button class="boton">
-            <ion-icon name="add-outline"></ion-icon>
-            <span>Create new</span>  
-        </button>
-    </div>
-    <nav class="navegacion">
-        <ul>
-            <li>
-                <a href="index.php">
-                    <ion-icon name="home-outline"></ion-icon>
-                    <span>Inicio</span>
-                </a>
-            </li>
-            <li>
-                <a href="play.php">
-                    <ion-icon name="logo-playstation"></ion-icon>
-                    <span>Play</span>
-                </a>
-            </li>
-            <li>
-                <a href="xbox.php">
-                    <ion-icon name="logo-xbox"></ion-icon>
-                    <span>Xbox</span>
-                </a>
-            </li>
-            <li>
-                <a href="nintendo.php">
-                    <ion-icon name="game-controller-outline"></ion-icon>
-                    <span>Nintendo</span>
-                </a>
-            </li>
-            <li>
-                <a href="nosotros.php">
-                    <ion-icon name="person-outline"></ion-icon>
-                    <span>Nosotros</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+            <div>
+                <div class="nombre-pagina">
+                    <img src="media/img/logo.jpeg" alt="55" height="50">
+                    <span>PIXELEMPOIRO</span>
+                </div>
 
-    <div>
-        <div class="linea"></div>
-        <div class="modo-oscuro">
-            <div class="info">
-                <ion-icon name="moon-outline"></ion-icon>
-                <span>Dark Mode</span>   
             </div>
-            <div class="switch">
-                <div class="base">
-                    <div class="circulo"></div>
+            <nav class="navegacion">
+                <ul>
+                    <li>
+                        <a href="index.php">
+                            <ion-icon name="home-outline"></ion-icon>
+                        <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="play.php">
+                            <ion-icon name="logo-playstation"></ion-icon>
+                            <span>Play</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="xbox.php">
+                            <ion-icon name="logo-xbox"></ion-icon>
+                            <Span>Xbox</Span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nintendo.php">
+                            <ion-icon name="game-controller-outline"></ion-icon>
+                            <span>Nintendo</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nosotros.php">
+                            <ion-icon name="people-outline"></ion-icon>
+                            <span>Nosotros</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mision-vision.php">
+                            <ion-icon name="diamond-outline"></ion-icon>
+                            <span>Mision y Vision</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="proposito.php">
+                            <ion-icon name="star-outline"></ion-icon>
+                            <span>Porposito</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div>
+                <div class="linea"></div>
+
+                <div class="modo-oscuro">
+                    <div class="info">
+                        <ion-icon name="moon-outline"></ion-icon>
+                        <span>Dark Mode</span>   
+                    </div>
+                    <div class="switch">
+                        <div class="base">
+                            <dev class="circulo">
+                            </dev>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
         </div>
-    </div>
-</div>
 
 <div class="carrito-icon" onclick="toggleCarrito()">
     <ion-icon name="cart-outline"></ion-icon>
@@ -233,10 +245,10 @@
             <div class="header-txt">
                 <h1>Compra todos los <span>juegos</span> <br> que quieras</h1>
                 <p>
-                    En esta página web encontrarás todos los juegos de Xbox.
+                    En esta página encontraras juegos de terror de la plataforma de XBOX
                 </p>
                 <div class="buttons">
-                    <a href="#contact-section" class="btn-1">Información</a>
+                    <a href="#contact-section" class="btn-1">Categorias</a>
                     <a href="#product-content" class="btn-1">Compras</a>
                 </div>
             </div>
@@ -363,7 +375,7 @@
 
     <section id="contact-section" class="contact container">
             <div class="contact-content">
-                <h3>Completa tus datos personales</h3>
+                <h3>Categorias</h3>
                 <form>
                 <a href="xbox.php">
                         <span>Poúlares</span>

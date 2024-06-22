@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nosotros - PIXELEMPORIO</title>
+    <link rel="icon" type="text/css" href="media/img/logo.jpeg">
+    <title>Nosotros</title>
+    <link rel="stylesheet" type="text/css" href="css/nosotros.css">
     <link rel="stylesheet" type="text/css" href="css/barralateral.css">
 </head>
 <body>  
@@ -14,69 +16,78 @@
     </div>
 
     <div class="barra-lateral">
-        <div>
-            <div class="nombre-pagina">
-                <ion-icon id="cloud" name="cloud-outline"></ion-icon>
-                <span>PIXELEMPOIRO</span>
+            <div>
+                <div class="nombre-pagina">
+                    <img src="media/img/logo.jpeg" alt="55" height="50">
+                    <span>PIXELEMPOIRO</span>
                 </div>
-                <button class="boton">
-                    <ion-icon name="add-outline"></ion-icon>
-                    <span>Create new</span>  
-                </button>
-        </div>
-        <nav class="navegacion">
-            <ul>
-                <li>
-                    <a href="index.php">
-                        <ion-icon name="home-outline"></ion-icon>
-                    <span>Inicio</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="play.php">
-                        <ion-icon name="logo-playstation"></ion-icon>
-                    <span>Play</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="xbox.php">
-                        <ion-icon name="logo-xbox"></ion-icon>
-                    <Span>Xbox</Span>
-                    </a>
-                </li>
-                <li>
-                    <a href="nintendo.php">
-                        <ion-icon name="game-controller-outline"></ion-icon>
-                    <span>Nintendo</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="nosotros.php">
-                        <ion-icon name="person-outline"></ion-icon>
-                    <span>Nosotros</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
 
-        <div>
-            <div class="linea"></div>
+            </div>
+            <nav class="navegacion">
+                <ul>
+                    <li>
+                        <a href="index.php">
+                            <ion-icon name="home-outline"></ion-icon>
+                        <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="play.php">
+                            <ion-icon name="logo-playstation"></ion-icon>
+                            <span>Play</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="xbox.php">
+                            <ion-icon name="logo-xbox"></ion-icon>
+                            <Span>Xbox</Span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nintendo.php">
+                            <ion-icon name="game-controller-outline"></ion-icon>
+                            <span>Nintendo</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nosotros.php">
+                            <ion-icon name="people-outline"></ion-icon>
+                            <span>Nosotros</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mision-vision.php">
+                            <ion-icon name="diamond-outline"></ion-icon>
+                            <span>Mision y Vision</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="proposito.php">
+                            <ion-icon name="star-outline"></ion-icon>
+                            <span>Porposito</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div>
+                <div class="linea"></div>
 
-            <div class="modo-oscuro">
-                <div class="info">
-                    <ion-icon name="moon-outline"></ion-icon>
-                    <span>Dark Mode</span>   
-                </div>
-                <div class="switch">
-                    <div class="base">
-                        <dev class="circulo">
-                        </dev>
+                <div class="modo-oscuro">
+                    <div class="info">
+                        <ion-icon name="moon-outline"></ion-icon>
+                        <span>Dark Mode</span>   
+                    </div>
+                    <div class="switch">
+                        <div class="base">
+                            <dev class="circulo">
+                            </dev>
+                        </div>
                     </div>
                 </div>
             </div>
+            
         </div>
-        
-    </div>
 
     <main>
         <div class="container">
@@ -98,6 +109,7 @@
                 <div>
                     <h3>Jhon Salazar</h3>
                     <p>Fundador y CEO. Jhon es un gamer de toda la vida con una visión clara de llevar PIXELEMPORIO a la vanguardia del mercado de videojuegos.</p>
+                    <p>Cel: 3102874026</p>
                 </div>
             </div>
             <div class="team-member">
@@ -105,6 +117,7 @@
                 <div>
                     <h3>Cristian López</h3>
                     <p>Director de Marketing. Cristian se encarga de las estrategias de marketing y las redes sociales, conectando a PIXELEMPORIO con gamers de todo el mundo.</p>
+                    <p> Cel: 3084715497</p>
                 </div>
             </div>
             <div class="team-member">
@@ -112,11 +125,12 @@
                 <div>
                     <h3>Santiago Valencia</h3>
                     <p>Jefe de Servicio al Cliente. Santiago lidera el equipo de soporte, asegurándose de que cada cliente tenga una experiencia positiva y satisfactoria.</p>
+                    <p>Cel: 3102937485</p>
                 </div>
             </div>
 
             <h2>Nuestros Valores</h2>
-            <ul>
+            <ul class="custom-list">
                 <li><strong>Pasión por los Videojuegos:</strong> Nuestra dedicación a los videojuegos nos impulsa a ofrecer siempre lo mejor a nuestros clientes.</li>
                 <li><strong>Innovación:</strong> Nos mantenemos a la vanguardia de las tendencias y tecnologías del sector.</li>
                 <li><strong>Calidad:</strong> Ofrecemos solo productos que cumplen con nuestros altos estándares de calidad.</li>
@@ -125,7 +139,8 @@
             </ul>
 
             <p>¡Gracias por elegir PIXELEMPORIO como tu tienda de confianza para videojuegos! Esperamos brindarte siempre la mejor experiencia de compra.</p>
-        </div>
+    </div>
+
     </main>
     
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
